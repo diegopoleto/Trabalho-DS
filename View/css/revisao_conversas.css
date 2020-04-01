@@ -1,0 +1,154 @@
+.mp {
+  margin: 0;
+  padding: 0; }
+
+.radius15 {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+.shadow {
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(86, 86, 86, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(86, 86, 86, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(86, 86, 86, 0.75); }
+
+.hide {
+  display: none; }
+
+div#modalCriarConversa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none; }
+  div#modalCriarConversa.active {
+    display: block; }
+    div#modalCriarConversa.active > div.container {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex; }
+  div#modalCriarConversa > div.container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+    div#modalCriarConversa > div.container ul {
+      max-width: 300px;
+      width: 100%;
+      overflow-y: scroll;
+      min-height: 400px;
+      max-height: 600px;
+      background-color: #fafafa;
+      border: 2px solid #000;
+      margin: 0;
+      padding: 20px; }
+      div#modalCriarConversa > div.container ul li {
+        list-style: none;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px dashed #000;
+        background-color: #fff; }
+        div#modalCriarConversa > div.container ul li div.nome {
+          font-weight: bold;
+          font-size: 1.5em; }
+
+body > div.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  body > div.container ul#conversas, body > div.container div#conversa {
+    margin: 0 20px; }
+  body > div.container ul#conversas {
+    width: 100%;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 600px;
+    overflow-y: scroll;
+    background-color: #F04A58;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 0;
+    border: 2px solid #000;
+    box-sizing: border-box; }
+    body > div.container ul#conversas a {
+      color: #000; }
+      body > div.container ul#conversas a li {
+        margin: 10px 0;
+        padding: 20px;
+        box-sizing: border-box;
+        list-style: none;
+        background-color: #FFF7FA;
+        width: 100%; }
+        body > div.container ul#conversas a li:hover {
+          background-color: #71DDE3;
+          color: #fff; }
+      body > div.container ul#conversas a:first-of-type li {
+        margin-top: 0; }
+      body > div.container ul#conversas a:last-of-type li {
+        margin-bottom: 20px; }
+      body > div.container ul#conversas a#nova li {
+        background-color: #0396A6;
+        color: #fff;
+        font-weight: bold; }
+      body > div.container ul#conversas a.active li {
+        background-color: #71DDE3;
+        color: #fff; }
+  body > div.container div#conversa {
+    max-width: 600px;
+    width: 100%; }
+    body > div.container div#conversa div#mensagens ul {
+      overflow-y: scroll;
+      height: 400px;
+      margin: auto;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #fafafa;
+      border: 2px solid #000; }
+      body > div.container div#conversa div#mensagens ul li {
+        list-style: none;
+        width: 100%;
+        display: block;
+        padding: 10px;
+        box-sizing: border-box; }
+        body > div.container div#conversa div#mensagens ul li div.container {
+          display: inline-block;
+          max-width: 300px;
+          width: 100%;
+          text-align: left; }
+        body > div.container div#conversa div#mensagens ul li.outro {
+          text-align: left; }
+          body > div.container div#conversa div#mensagens ul li.outro div.container {
+            background-color: #F04A58; }
+        body > div.container div#conversa div#mensagens ul li.voce {
+          text-align: right; }
+          body > div.container div#conversa div#mensagens ul li.voce div.container {
+            background-color: #71DDE3; }
+    body > div.container div#conversa div#enviarMensagem {
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #000;
+      margin-top: 10px;
+      text-align: right;
+      background-color: #fafafa; }
+      body > div.container div#conversa div#enviarMensagem textarea {
+        width: 100%;
+        border: 1px solid #000;
+        padding: 10px;
+        box-sizing: border-box; }
+      body > div.container div#conversa div#enviarMensagem div#botoes {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start; }
+        body > div.container div#conversa div#enviarMensagem div#botoes button {
+          display: inline-block;
+          margin: 0;
+          margin-top: 10px; }
+
+/*# sourceMappingURL=revisao_conversas.css.map */

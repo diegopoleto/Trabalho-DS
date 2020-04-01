@@ -1,0 +1,33 @@
+.mp {
+  margin: 0;
+  padding: 0; }
+
+.radius15 {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+.shadow {
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(86, 86, 86, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(86, 86, 86, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(86, 86, 86, 0.75); }
+
+.hide {
+  display: none; }
+
+div#templateCadastro div.container {
+  text-align: right;
+  max-width: 400px;
+  margin: auto;
+  padding: 0; }
+div#templateCadastro div.cols {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  div#templateCadastro div.cols div#col {
+    padding: 10px; }
+    div#templateCadastro div.cols div#col input {
+      display: block;
+      max-width: 200px; }
+
+/*# sourceMappingURL=templateCadastro.css.map */

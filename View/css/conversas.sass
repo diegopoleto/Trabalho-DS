@@ -1,0 +1,149 @@
+@import variables
+
+div#modalCriarConversa
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    display: none
+    &.active
+        display: block
+        > div.container
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+    > div.container
+        display: none
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.7)
+        //display: none
+        &.active
+        ul
+            max-width: 300px
+            width: 100%
+            overflow-y: scroll
+            min-height: 400px
+            max-height: 600px
+            background-color: #fafafa
+            border: 2px solid #000
+            margin: 0
+            padding: $size
+            li
+                list-style: none
+                padding: $size/2
+                margin: $size/2 0
+                border: 1px dashed #000
+                background-color: #fff
+                div.nome
+                    font-weight: bold
+                    font-size: 1.5em
+
+body > div.container
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    ul#conversas, div#conversa
+        margin: 0 $size
+    ul#conversas
+        width: 100%
+        max-width: 400px
+        min-height: 200px
+        max-height: 600px
+        overflow-y: scroll
+        background-color: $cor2
+        padding: $size
+        margin: $size/2
+        margin-top: 0
+        border: 2px solid #000
+        box-sizing: border-box
+        a
+            color: #000
+            li
+                margin: $size/2 0
+                padding: $size
+                box-sizing: border-box
+                list-style: none
+                background-color: $base
+                width: 100%
+                &:hover
+                    background-color: $cor4
+                    color: #fff
+            &:first-of-type
+                li
+                    margin-top: 0
+            &:last-of-type
+                li
+                    margin-bottom: $size
+            &#nova
+                li
+                    background-color: $cor5
+                    color: #fff
+                    font-weight: bold
+            &.active
+                li
+                    background-color: $cor4
+                    color: #fff
+
+    div#conversa
+        max-width: 600px
+        width: 100%
+        div#mensagens
+            ul
+                overflow-y: scroll
+                height: 400px
+                margin: auto
+                padding: 0
+                box-sizing: border-box
+                background-color: #fafafa
+                border: 2px solid #000
+                li
+                    list-style: none
+                    width: 100%
+                    display: block
+                    padding: $size/2
+                    box-sizing: border-box
+                    div.nome
+                    div.data
+                    p.texto
+                    div.container
+                        display: inline-block
+                        max-width: 300px
+                        width: 100%
+                        text-align: left
+                    &.outro
+                        text-align: left
+                        div.container
+                            background-color: $cor2
+                    &.voce
+                        text-align: right
+                        div.container
+                            background-color: $cor4
+        div#enviarMensagem
+            padding: $size
+            width: 100%
+            box-sizing: border-box
+            border: 2px solid #000
+            margin-top: $size/2
+            text-align: right
+            background-color: #fafafa
+            textarea
+                width: 100%
+                border: 1px solid #000
+                padding: $size/2
+                box-sizing: border-box
+            div#botoes
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                //justify-content: space-between
+                justify-content: flex-end
+                align-items: flex-start
+                button
+                    display: inline-block
+                    margin: 0
+                    margin-top: $size/2
